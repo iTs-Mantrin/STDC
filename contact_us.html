@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Training & Development Centre</title>
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/contact_us.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Eo_nGTdmMEsb0iTdc",
+            });
+        })();
+    </script>
+    <script type="text/javascript" src="./script/send_email.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="sgt_logo">
+                    <img src="./image/sgt_logo.png" alt="">
+                </div>
+
+            </div>
+            <div class="heading">
+                <h1>Student Training & Development Centre</h1>
+                <p>Helping SGT students grow into professionals</p>
+            </div>
+            <div class="logo">
+                <div class="stdc_logo">
+                    <img src="./image/stdc_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <navbar>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </navbar>
+    </header>
+
+    <div class="container">
+        <div class="contactus">
+            <div class="close">
+                <a href="./index.html">
+                    <div class="btn-close" type="button"></div>
+                </a>
+            </div>
+            <div class="contact_us_container">
+                <div class="contactus-sec">
+                    <h2 class="contact_us_heading"><span>Request a</span> Enquery</h2>
+                    <p class="subheading">Please feel free to reach out to us by filling up the form below. For the most
+                        appropriate response from our side, make sure you state the nature of your query.</p>
+                    <div class="contact-form">
+                        <form action="#" method="post" class="form">
+                            <div class="mb3">
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="name" type="text" class="form-control" placeholder="Enter Name"
+                                            aria-label="name">
+                                    </div>
+                                    <div class="col">
+                                        <input id="email" type="email" class="form-control" placeholder="Enter Email"
+                                            aria-label="email">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="phone" type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+                                    </div>
+                                    <div class="col">
+                                        <input id="designation" type="text" class="form-control" placeholder="Designation"
+                                            aria-label="Designation">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 ">
+                                <div class="col-sm-12">
+                                    <select id="reason" class="form-select" aria-label="Default select example">
+                                        <option selected>- Select Reason -</option>
+                                        <option value="1">Application Enquiry</option>
+                                        <option value="2">Classes Enquery</option>
+                                        <option value="3">Syllabus Enquery</option>
+                                        <option value="4">Study Material Enqury</option>
+                                        <option value="5">Other Enquery</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="query" class="form-control" placeholder="your query" id="exampleFormControlTextarea1"
+                                    rows="5"></textarea>
+                            </div>
+                            <div class="button" style="display:flex; gap: 5px;">
+                                <input type="button" class="btn btn-primary"
+                                onclick="sendMail()" value="Submit" />
+                                <input type="button" class="btn btn-outline-primary"
+                                    onclick="window.location.href='./index.html'" value="Cancel" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="join_us_container">
+            <div class="join_us">
+                <h2>Join Us Today</h2>
+                <p>Join STDC today and become part of a learning community dedicated to excellence. With expert faculty,
+                    structured courses, and high-quality resources, we prepare you for competitive exams and
+                    professional success. Prepare today, succeed tomorrow with STDC</p>
+                <div class="button">
+                    <a href="https://forms.gle/8SPjz2qowWiFim2y7">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="odd">
+        <div class="hr"></div>
+        <div class="footer_container">
+            <div class="contact_us">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i>Room No: 101, Block D, SGT University</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:stdc@sgtuniversity.org">Email:
+                        stdc@sgtuniversity.org</a></p>
+                <p><i class="fas fa-phone"></i>Phone No: +91 8742 989932</p>
+            </div>
+            <div class="social_media">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/stdc_sgtu"><i class="fab fa-instagram"></i>Instagram</a>
+                    <!-- <a href="https://www.facebook.com/sgtuniversitygurgaon/"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="https://x.com/SGTUniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="https://in.linkedin.com/school/sgt-university/"><i class="fab fa-linkedin-in"></i>LinkedIn</a> -->
+                </div>
+
+            </div>
+            <div class="navigation">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Student Training & Development Center (STDC), SGT University. All Rights Reserved.</p>
+            <p>Designed & Developed by Manish Kumar</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

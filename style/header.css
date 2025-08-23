@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #004e92, #000428);
+  color: #fff;
+  padding-top: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header .container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-bottom: 50px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header .logo img {
+  height: 90px; 
+  border-radius: 5px;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header .heading {
+  text-align: right;
+}
+
+header .heading h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+}
+
+header .heading p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  opacity: 0.9;
+  color: #f0f0f0;
+}
+
+navbar div{
+    width: 100%;
+    justify-content: end;
+    background: #0a63b1;
+
+}
+
+.nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 5px 10px; 
+}
+
+.nav ul li{
+    border:1px solid #fff;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+
+.nav ul li:hover{
+background: linear-gradient(90deg, #004e92, #000428);
+}
+.nav a{
+    text-decoration:none !important;
+    color: #fff;
+}
+@media (max-width: 768px) {
+  header{
+    padding-top: 20px;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items:start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  header .logo {
+    order: 1;
+    align-items:default;
+  }
+
+.sgt_logo img,.stdc_logo img {
+  display: flex;
+  flex-direction: row;
+  height: 80px !important;
+  }
+
+  .heading {
+    order: 2;  
+  }
+
+  .nav ul{
+    gap: 5px;
+    margin: 5px; 
+}
+.nav ul li{
+    padding:3px 8px;
+}
+.nav a{
+    font-size: 14px;
+}
+
+}
