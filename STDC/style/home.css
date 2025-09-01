@@ -93,50 +93,18 @@ text-align: justify;
 
 .team_card{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
-
-.team_card .card-body{
-    padding: 1rem !important;
-}
-
 .card{
     border: 1px solid black;
     text-align: center;
 }
 .card>img{
-   
     padding: 20px;
     border: none;
     height: 320px;
     border-radius: 30px;
-}
-.team_card_2{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.team_card_2 img{
-        height: 210px !important;
-}
-
-.team_card_2 h6{
-    font-size: 15px;
-}
-
-.team_card_2 p{
-    font-size: 12px;
-}
-
-.team_card_2 a{
-    font-size: 10px;
-}
-.team_card_2 .card-body{
-    padding: 0.1rem !important;
 }
 
 .faculty-table {
@@ -173,93 +141,9 @@ text-align: justify;
   text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
-    .container{
-        flex-direction: column-reverse;
-    }
-    
-    section{
-        padding: 10px;
-        width: 100%;
-    }
-    h2{
-        font-size: 28px !important;
-        padding: 20px !important;
-    }
-
-    .about_us_img{
-        display: flex;
-        justify-content: center;
-    }
-
-    .about_us_img img{
-        width: 650px;
-        display: flex;
-        justify-content: center;
-    }
-    .about_us>h2,.heading>h2,h2{
-        font-size: 28px !important;
-    }
-
-    .announcement_card{
-        margin: auto;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .card_detail{
-        width: 90%;
-    }
-
-    .our_team{
-        width: 100%;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .team_card{
-        margin: auto;
-        gap:10px;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        align-content: center
-    }
-
-    .faculty-table th,.faculty-table td{
-        font-size:12px;
-        padding:10px 5px;
-    }
-
-    .what_we_offer{
-        margin: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .what_we_offer_images{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .desc{
-        width: 85%;
-    }
-    .desc h3{
-        font-size: 18px;
-    }
-}
-
-
 @media (max-width: 768px) {
     .container{
-        flex-direction: column-reverse;
+        flex-direction: column;
 
     }
     
